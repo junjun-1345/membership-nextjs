@@ -17,7 +17,7 @@ export const initializerStore = (preloadedState) => {
 
     if (preloadedState && store) {
         _store = initStore({
-            ...store.getSate(),
+            ...store.getState(),
             ...preloadedState,
         })
         store = undefined
